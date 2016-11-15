@@ -5,3 +5,5 @@
 Creates a new CyclicBarrier that will trip when the given number of parties (threads) are waiting upon it, and does not perform a predefined action when the barrier is tripped.CyclicBarrier(int parties, Runnable barrierAction)
 Creates a new CyclicBarrier that will trip when the given number of parties (threads) are waiting upon it, and which will execute the given barrier action when the barrier is tripped, performed by the last thread entering the barrier.
 可以向CyclicBarrier传递一个任务数以及一个runnable,runnable将在所有线程都处于wait状态时执行。
+- DelayQueue
+是一个无界的BlockingQueue，用于防止实现了Delayed接口的对象，其对象只能在其到期时才能被取走。这种对列是有序的，即队头对象延迟到期时间最久远（任务最紧急）。使用take方法将取走队头，实际就成为了优先队列的一种
