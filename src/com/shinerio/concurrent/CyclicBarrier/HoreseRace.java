@@ -24,7 +24,7 @@ public class HoreseRace {
 				}
 				System.out.println(s);
 				for (Horse horse : horses) {
-					System.out.println(horse.getStrides());
+					System.out.println(horse.tracks());
 				}
 				for (Horse horse : horses) {
 					if(horse.getStrides()>=FINISH_LINE){
